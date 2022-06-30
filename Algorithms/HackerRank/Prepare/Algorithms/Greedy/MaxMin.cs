@@ -2,9 +2,9 @@
 using System.IO;
 using System.Linq;
 
-namespace Algorithms.HackerRank.Prepare.Algorithms.Greedy
+namespace Algorithms.HackerRank.Prepare.Algorithms.Greedy.MaxMin
 {
-    public static class MaxMin
+    public static class Solution
     {
         // Complete the maxMin function below.
         private static int maxMin(int k, int[] arr)

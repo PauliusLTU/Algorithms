@@ -1,7 +1,6 @@
-﻿using Algorithms.HackerRank.Prepare.Algorithms.Greedy;
-using Algorithms.Tests.Google;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System.Collections.Generic;
+using MaxMin = Algorithms.HackerRank.Prepare.Algorithms.Greedy.MaxMin;
 
 namespace Algorithms.Tests.HackerRank.Prepare.Algorithms.Greedy
 {
@@ -58,14 +57,14 @@ namespace Algorithms.Tests.HackerRank.Prepare.Algorithms.Greedy
             };
         }
 
-        [TestCaseSourceAttribute(nameof(MaxMinTestCases))]
-        public void MaxMin_Main_Tests(ConsoleTestCase consoleTestCase)
+        [TestCaseSource(nameof(MaxMinTestCases))]
+        public void MaxMin_Solution_Main_Tests(ConsoleTestCase consoleTestCase)
         {
             // Arrange
             ConsoleEmulator.SetIn(consoleTestCase);
 
             // Act
-            MaxMin.Main(null);
+            MaxMin.Solution.Main(null);
 
             // Assert
             ConsoleEmulator.AreEqual(consoleTestCase);

@@ -1,7 +1,6 @@
-﻿using Algorithms.HackerRank.Prepare.Algorithms.Greedy;
-using Algorithms.Tests.Google;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System.Collections.Generic;
+using MinimumAbsoluteDifference = Algorithms.HackerRank.Prepare.Algorithms.Greedy.MinimumAbsoluteDifference;
 
 namespace Algorithms.Tests.HackerRank.Prepare.Algorithms.Greedy
 {
@@ -36,14 +35,14 @@ namespace Algorithms.Tests.HackerRank.Prepare.Algorithms.Greedy
             };
         }
 
-        [TestCaseSourceAttribute(nameof(MinimumAbsoluteDifferenceTestCases))]
-        public void MinimumAbsoluteDifference_Main_Tests(ConsoleTestCase consoleTestCase)
+        [TestCaseSource(nameof(MinimumAbsoluteDifferenceTestCases))]
+        public void MinimumAbsoluteDifference_Solution_Main_Tests(ConsoleTestCase consoleTestCase)
         {
             // Arrange
             ConsoleEmulator.SetIn(consoleTestCase);
 
             // Act
-            MinimumAbsoluteDifference.Main(null);
+            MinimumAbsoluteDifference.Solution.Main(null);
 
             // Assert
             ConsoleEmulator.AreEqual(consoleTestCase);

@@ -2,9 +2,9 @@
 using System.IO;
 using System.Linq;
 
-namespace Algorithms.HackerRank.Prepare.Algorithms.Greedy
+namespace Algorithms.HackerRank.Prepare.Algorithms.Greedy.MinimumAbsoluteDifference
 {
-    public static class MinimumAbsoluteDifference
+    public static class Solution
     {
         // Complete the minimumAbsoluteDifference function below.
         private static int minimumAbsoluteDifference(int[] arr)
