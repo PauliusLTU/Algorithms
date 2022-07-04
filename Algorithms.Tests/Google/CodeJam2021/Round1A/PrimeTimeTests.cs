@@ -1,6 +1,6 @@
-﻿using Algorithms.Google.CodeJam2021.Round1A;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System.Collections.Generic;
+using PrimeTime = Algorithms.Google.CodeJam2021.Round1A.PrimeTime;
 
 namespace Algorithms.Tests.Google.CodeJam2021.Round1A
 {
@@ -61,13 +61,13 @@ Case #4: 8
         }
 
         [TestCaseSourceAttribute(nameof(PrimeTimeTestCases))]
-        public void PrimeTime_Solve_Tests(ConsoleTestCase consoleTestCase)
+        public void PrimeTime_Solution_Main_Tests(ConsoleTestCase consoleTestCase)
         {
             // Arrange
             ConsoleEmulator.SetIn(consoleTestCase);
 
             // Act
-            PrimeTime.Solve();
+            PrimeTime.Solution.Main(null);
 
             //Assert
             ConsoleEmulator.AreEqual(consoleTestCase);

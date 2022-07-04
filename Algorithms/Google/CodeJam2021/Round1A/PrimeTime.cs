@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Algorithms.Google.CodeJam2021.Round1A
+namespace Algorithms.Google.CodeJam2021.Round1A.PrimeTime
 {
-    public static class PrimeTime
+    public class Solution
     {
-        public static void Solve()
+        public static void Main(string[] args)
         {
             var num_test_cases = Convert.ToInt32(Console.ReadLine());
             for (var t = 0; t < num_test_cases; t++)
